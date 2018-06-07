@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Pompiere');
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
+@import url('https://fonts.googleapis.com/css?family=Amita');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+/* HOME PAGE PHP */
+
+#header{
+    width:1250px;
+    height:600px;
+    margin:0;
+    /* position:absolute; */
+    background-image:url("./assets/img/tablemap.jpeg");
+}
+
+#header2{
+    height:100px;
+    background: linear-gradient(to right, #00537E, #3AA17E);
+}
+
+
+html{
+    max-width:1300px;
+    margin:auto;
+    overflow-x: hidden;
+}
+
+
+body{
+    text-align: center;
+    font-size:20px;
+    margin:0;
+    /* width: 1054px;
+    height: 1054px;
+     */
+    }
+
+    p{
+        font-family:"Quicksand";
+    }
+/* img { 
+    object-fit: contain;
+  } */
+
+.sectionTitle{
+    font-family:"Quicksand";
+    font-size:40px;
+    text-transform:uppercase;
+}
+
+.unslider{
+    height:400px;
+    width:100%;
+}
+
+.showSpaces{
+    justify-content: space-evenly;
+    flex-grow: 1;
+    height:450px;
+}
+
+.showSpaces img{
+    width:100%;
+    height:200px;
+}
+
+#pageTitle{
+    font-size:40px;
+    font-family:"Josefin Sans";
+    position:absolute;
+    text-shadow: 2px 2px black;
+    color:#fff;
+    margin:10px;
+}
+
+.spaceTitle{
+    font-family:"Quicksand";
+    text-transform:uppercase;
+}
+
+#tagline{
+    position:absolute;
+    font-size:30px;
+    color:white;
+    margin-top:-350px;
+    margin-left:100px;
+    font-family:"Quicksand";
+    background: linear-gradient(to right, #00537E, #3AA17E);
+    padding:5px 20px;
+}
+
+.spaceDesc{
+    font-family:"Quicksand";
+    font-size:15px;
+    text-align: left;
+}
+
+.buyBtns{
+    border-radius:10% 10%;
+    font-size:15px;
+    height:40px;
+    width:150px;
+    /* background:linear-gradient(to right, #02ACBB, #F1D833); */
+    color:#A1025E;
+    text-transform:uppercase;
+    border:2px solid #A1025E;
+    background-color:white;
+}
+
+
+
+/* SLIDER */
+.wrapping{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .wrapping{
+    display: flex;
+    align-items: stretch;
+    width: 90%;
+    margin: auto;
+  }
+  
+  button{
+    width: 30px;
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    outline: none;
+    opacity: 0.5;
+    transition: opacity 300ms ease-out;
+    cursor: pointer;
+  }
+    
+    button:hover{
+      opacity: 1;
+    }
+
+
+  .scroller{
+    flex: 1;
+    overflow: hidden;
+  }
+  
+  .items{
+    list-style-type: none;
+    white-space: nowrap;
+    font-size: 0;
+    line-height: 0;
+    transition: transform 1s ease-in-out;
+  }
+  
+  #item{
+    padding: 30px 20px;
+    display: inline-block;
+    width: 100%;
+    height: 250px;
+    font-size: 25px;
+    letter-spacing: -0.03em;
+    line-height: 1;
+    font-weight: bold;
+    background-size: cover;
+    background-position: 50% 50%;
+    text-transform: uppercase;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+    background-color:lavender;
+  }
+    
+#item:nth-child(2) {
+      color: #fff;
+  }
+
+/* END SLIDER */
+
+
+#mainNav{
+    position:absolute;
+    color:white;
+    font-size:20px;
+}
+#mainNav ul{
+    list-style-type: none;
+}
+
+#mainNav ul li{
+    margin-left:1000px;
+    text-decoration:none;
+}
+
+#mainNav ul li a{
+    color:white;
+    float:right;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-family:"Quicksand";
+}
+
+
+#slide1{
+    background-position: center;
+    overflow: hidden;
+    height:inherit;
+    background-image:url("./assets/img/slide1.jpeg");
+
+}
+#slide2{
+    background-image:url("../img/slide2.jpeg");
+    background-position: center;
+    overflow: hidden;
+    height:inherit;
+}
+
+/* #header{
+    height:100px;
+    background-color:teal;
+    text-align:center;
+    color:#fff;
+    padding:10px 10px;
+    font-family:"Berkshire Swash";
+} */
+
+.labelTitle{
+    color:black;
+    font-family:"quicksand";
+    font-size:15px;
+    text-transform: uppercase;
+}
+
+.dateInput{
+    float:right;
+}
+
+.roomInput{
+    float:left;
+
+}
+
+#room{
+    background-color:#00537E;
+    color:white;
+    font-size:15px;
+    width:190px;
+
+}
+
+#date{
+    background-color:#00537E;
+    width:190px;
+    color:white;
+    font-size:15px;
+}
+
+input{
+    width:400px;
+    height:30px;
+}
+
+#button{
+    background: linear-gradient(to right, #00537E, #3AA17E);
+    color:#fff;
+    font-size:15px;
+    height:30px;
+    text-transform:uppercase;
+    border-radius:10px 10px;
+}
+
+
+
+#footer{
+    height:100px;
+    max-width:1400px;
+    /* position:sticky; */
+    /* overflow:hidden; */
+    margin:0;
+    padding:0;
+    background: linear-gradient(to right, #00537E, #3AA17E);
+}
+
+#footerPageTitle{
+    font-family:"Quicksand";
+    font-size:15px;
+    text-align:left;
+    /* margin:5px 40px; */
+    /* padding:5px 40px; */
+}
+
+/* INDEX PHP */
+
+#pictureDisplay{
+    /* background-color:lavenderblush; */
+    max-height:400px;
+    /* transition: width 2s linear 1s; */
+    /* max-width:500px; */
+}
+
+
+/* #dropdownList{
+    width:150px;
+
+} */
+
+
+.dropdown-content{
+    background-color:red;
+    color:white;
+}
+
+
+.showImages{
+    width:100%;
+    overflow:hidden;
+    height:100px;
+}

@@ -1,0 +1,926 @@
+/* This is the master SCSS file 
+ * from which all other SCSS files will be called.
+ * Examples taken from http://sass-lang.com/guide
+ */
+/* 
+ * Variables and optional mixins, written in SCSS.
+ * Examples taken from http://sass-lang.com/guide
+ *
+ */
+/* 
+ * Main styles, written in SCSS.
+ * Examples taken from http://sass-lang.com/guide
+ *
+ */
+ @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+ @font-face {
+  font-family: "Lush";
+  src: url("../fonts/Lush.ttf");
+}
+
+/* input:hover{
+  display:none;
+} */
+
+html{
+  max-width:1200px;
+  margin:auto;
+}
+
+body{
+  margin:0;
+  font: 100% Helvetica, sans-serif;
+  color: #555555;
+}
+
+header{
+  height:120px;
+  background-color:black;
+  margin:0px;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  height:700px;
+}
+
+#slideLink{
+  position:absolute;
+  font-size:50px;
+  font-family:"Lush";
+  text-decoration:none;
+  color:#fff;
+  text-align:center;
+  background-color:rgba(0,0,0,0.7);
+  padding:20px;
+  /* position: relative; */
+  /* float: left; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index:99;
+}
+
+#mainNav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+#mainNav li {
+  display: inline-block;
+  text-decoration: none;
+  padding:0px;
+  margin:0px;
+}
+
+#mainNav a {
+  color:white;
+  margin-right:2em;
+  font-size:18px;
+  font-family:"Roboto";
+  text-transform:uppercase;
+}
+
+#mainNav a:first-child{
+  margin-left:2em;
+}
+
+#mainNav a:link{
+  text-decoration: none;
+}
+
+#mainNav a:visited{
+  text-decoration: none;
+}
+
+#mainNav a:active{
+  text-decoration: none;
+}
+
+
+#mainNav a:hover{
+  color:darkgrey;
+}
+
+#mainTitle p{
+  text-align: center;
+  font-family:"Roboto";
+  margin:0;
+  padding:5px;
+  font-size:30px;
+}
+
+.grid-item a{
+  text-decoration:none;
+}
+
+.grid-item a:visited{
+  text-decoration:none;
+}
+
+#logo{
+  margin-left:2em;
+}
+
+/* HOME PAGE LIP SCRUB */
+
+.mainWrapper{
+  display: grid;
+  /* grid-template-columns: repeat(5, 1fr); */
+  grid-gap: 5px;
+  grid-auto-rows: minmax(100px, auto);
+  max-width: 1000px;
+  margin:auto;
+}
+
+.mainWrapper2{
+  display: grid;
+  /* grid-template-columns: repeat(5, 1fr); */
+  grid-gap: 5px;
+  grid-auto-rows: minmax(100px, auto);
+  height:400px;
+  max-width: 1000px;
+  margin:auto;
+}
+
+.secondRow{
+  grid-column: 1/3;
+  grid-row: 1;
+  margin:5px;
+}
+
+.secondRow2{
+  grid-column: 3/4;
+  grid-row: 1;
+  margin:5px;
+  padding:10px;
+}
+
+.secondRow p{
+  text-align:left;
+  padding:5px 10px;
+  font-family: "Roboto";
+}
+
+h2{
+  text-transform:uppercase;
+}
+
+.secondRow h2{
+  font-family:"Lush";
+  font-size:30px;
+  text-align:center;
+}
+
+#transBtn{
+  margin:auto;
+  display:flex;
+  align-content: center;
+  width:150px;
+  height:40px;
+  background-color:black;
+  color:#fff;
+  font-size:15px;
+  cursor: pointer;
+}
+
+#scrubPhoto{
+  grid-column: 1/2;
+  grid-row: 1;
+  margin:10px;
+}
+
+#scrubPhoto img{
+  width:600px;
+  height:270px;
+}
+
+#scrubDesc{
+  grid-column: 3/4;
+  grid-row: 1;
+  font-family:"Roboto";
+  text-align: center;
+  padding:10px;
+}
+
+#scrubDesc h2{
+  font-family:"Lush";
+  font-size:30px;
+}
+
+#scrubDesc p{
+  text-align: left;
+}
+
+.message, .success, .error, .warning {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.success {
+  border-color: green;
+}
+
+.error {
+  border-color: red;
+}
+
+.warning {
+  border-color: yellow;
+}
+
+.container {
+  width: 100%;
+}
+
+article[role="main"] {
+  float: left;
+  width: 62.5%;
+}
+
+aside[role="complimentary"] {
+  float: right;
+  width: 31.25%;
+}
+
+.my-slider{
+  height:400px;
+}
+
+.my-slider ul li{
+  text-align: center;
+  font-size:50px;
+  font-family:"Lush";
+  color:white;
+}
+
+#slide1 img{
+  height:100%;
+  width:100%;
+  background-position: center;
+}
+
+#slide2 img{
+  height:100%;
+  width:100%;
+}
+
+#slide3 img{
+  height:100%;
+  width:100%;
+}
+
+/* FOOTER */
+
+.wrapper-footer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  height:200px;
+}
+
+#footer{
+  height:300px;
+  background-color:black;
+  width:100%;
+  grid-column: 1/5;
+  grid-row: 1;
+}
+
+#socialMediaIcons{
+  align-content: center;
+  text-align: center;
+}
+
+#antiBanner{
+  align-content: center;
+  margin:auto;
+  display: flex;
+}
+
+#footerBanner{
+  background-color:#ebebeb;
+}
+
+#facebook{
+  background-image:url("../img/socialMediaIcons/facebook-logo.png");
+  background-repeat:no-repeat;
+  background-position:center;
+  height:49px;
+  width:49px;
+  background-color:black;
+  border:0px;
+  cursor: pointer;
+}
+
+#googlePlus{
+  background-image:url("../img/socialMediaIcons/google-plus-logo.png");
+  background-repeat:no-repeat;
+  background-position:center;
+  height:49px;
+  width:49px;
+  background-color:black;
+  border:0px;
+  cursor: pointer;
+}
+
+#instagram{
+  background-image:url("../img/socialMediaIcons/instagram-logo.png");
+  background-repeat:no-repeat;
+  background-position:center;
+  height:49px;
+  width:49px;
+  background-color:black;
+  border:0px;
+  cursor: pointer;
+}
+
+#twitter{
+  background-image:url("../img/socialMediaIcons/twitter-social-logo.png");
+  background-repeat:no-repeat;
+  background-position:center;
+  height:49px;
+  width:49px;
+  background-color:black;
+  border:0px;
+  cursor: pointer;
+}
+
+#youtube{
+  background-image:url("../img/socialMediaIcons/youtube-logotype.png");
+  background-repeat:no-repeat;
+  background-position:center;
+  height:49px;
+  width:49px;
+  background-color:black;
+  border:0px;
+  cursor: pointer;
+}
+
+#socialTitle{
+  font-family:"roboto";
+  color:white;
+  font-size:20px;
+  text-align: center;
+}
+
+#copyright{
+  margin:0;
+  color:white;
+  padding:5px;
+}
+
+#copyrightInfo{
+  height:50px;
+  background-color:white;
+  text-align: center;
+}
+
+#productsTitle p{
+  font-family:"Roboto";
+  /* margin:2px 2px; */
+  /* font-size:30px; */
+  padding:5px 20px;
+  text-align: left;
+
+}
+
+
+#productsTitle .productTitle{
+  font-size:40px;
+
+}
+
+/* REGSITER PRODUCT */
+
+#registerTitle{
+  font-family:"Roboto";
+  text-align: center; 
+}
+
+#registerForm{
+  text-align: center;
+}
+
+/* MAIN PRODUCTS PAGE  */
+
+.wrapperProductsPage{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  grid-auto-rows: minmax(20px, auto);
+  /* height:800px; */
+  width:1200px;
+  margin:auto;
+}
+
+
+.tileTitle{
+  text-align: center;
+  font-family:"Lush";
+  font-size:20px;
+  margin:2px;
+}
+
+.tileText{
+  font-size:20px;
+  font-family:"Roboto";
+  text-align: center;
+  /* transform: translateY(90px); */
+  margin:0;
+}
+
+.tileText p{
+  word-break: break-all;
+  word-wrap: break-word;
+  margin:0;
+}
+
+.productTile1{
+  grid-column: 1/1;
+  grid-row: 1;
+  margin:0;
+}
+
+.productTile1:hover .overlay{
+  opacity:1;
+  color:black;
+}
+
+.wrapperProductsPage img{
+  align-content: center;
+  display:flex;
+  margin:auto;
+  border-radius:10px 10px;
+}
+
+.wrapperProductsPage img:hover{
+  opacity:0.9;
+}
+
+.productTile2{
+  grid-column: 2/3;
+  grid-row: 1;
+}
+
+.productTile2:hover .overlay{
+  opacity:1;
+  color:black;
+}
+
+.productTile3{
+  grid-column: 3/4;
+  grid-row: 1;
+}
+
+.productTile3:hover .overlay{
+  opacity:1;
+  color:black;
+}
+
+.productTile4{
+  grid-column: 1/2;
+  grid-row: 2;
+}
+.productTile4:hover .overlay{
+  opacity:1;
+  color:black;
+}
+
+.productTile5{
+  grid-column: 2/3;
+  grid-row: 2;
+}
+.productTile5:hover .overlay{
+  opacity:1;
+  color:black;
+}
+
+.productTile6{
+  grid-column: 3/4;
+  grid-row: 2;
+}
+
+.productTile6:hover .overlay{
+  opacity:1;
+  color:black;
+}
+
+/* BATH BOMB PRODUCT PAGE */
+
+.wrapperProducts{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  grid-auto-rows: minmax(10px, auto);
+  height:1200px;
+  margin:10px;
+}
+
+.wrapperProducts img{
+  align-content: center;
+  margin:auto;
+  display:flex;
+}
+
+.productTitle{
+  text-align:center;
+  font-size:20px;
+  font-family:"lush";
+  margin:0;
+  color:black;
+}
+
+.products{
+  grid-column: 1/2;
+  grid-row: 1;
+  /* height:500px; */
+}
+
+/* .product1{
+  grid-column: 1/2;
+  grid-row: 1;
+  height:500px;
+}
+
+.product2{
+  grid-column: 2/3;
+  grid-row: 1;
+  height:500px;
+}
+.product3{
+  grid-column: 3/4;
+  grid-row: 1;
+  height:500px;
+}
+
+.product4{
+  grid-column: 1/2;
+  grid-row: 5;
+  height:500px;
+}
+
+.product5{
+  grid-column: 2/3;
+  grid-row: 5;
+  height:500px;
+}
+.product6{
+  grid-column: 3/4;
+  grid-row: 5;
+  height:500px;
+} */
+
+.productBtn{
+  width:100%;
+  height:50px;
+  background-color:black;
+  color:white;
+  font-size:15px;
+  font-family:"Roboto";
+  cursor:pointer;
+}
+
+.productBtnUpdate{
+  width:30%;
+  height:50px;
+  background-color:black;
+  color:white;
+  font-size:15px;
+  font-family:"Roboto";
+  cursor:pointer;
+}
+
+.buyNowBtn{
+  width:100%;
+  height:50px;
+  background-color:black;
+  color:white;
+  font-size:15px;
+  font-family:"Roboto";
+  cursor:pointer;
+}
+
+input:hover{
+  background-color:white;
+  color:black;
+  border:1px solid black;
+}
+
+/* ITEM php */
+
+.wrapperItem{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  grid-auto-rows: minmax(100px, auto);
+  margin:10px;
+}
+
+.itemInfo{
+  grid-column: 1/2;
+  grid-row: 1;
+  background-color:lavender;
+  height:200px;
+}
+
+.inputProduct{
+  width:200px;
+  height:20px;
+  font-size:15px;
+}
+
+.registerBtn{
+  width:20%;
+  height:30px;
+  background-color:black;
+  color:white;
+  font-size:15px;
+  font-family:"Roboto";
+  cursor:pointer;
+}
+/* LOGIN PROFILE PAGE */
+
+.inputUser{
+  text-align: left;
+  font-family:"roboto";
+}
+
+.inputUser label{
+  font-size:20px;
+}
+
+.inputUser input{
+  width:50%;
+  height:30px;
+  font-size:15px;
+  border:1px solid black;
+}
+
+#profileHeadings{
+  padding:10px;
+}
+
+#profileHeadings h1{
+  margin:0;
+  text-align: center;
+}
+
+.loginWrapper{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.leftSide{
+  grid-column: 1;
+  grid-row: 1;
+  padding:20px;
+  text-align: left;
+}
+
+.rightSide{
+  grid-column: 2;
+  grid-row: 1;
+  padding:20px;
+}
+
+.rightSide2{
+  grid-column: 1/2;
+  grid-row: 1;
+  padding:20px;
+  /* text-align: center; */
+}
+
+.loginBtn{
+  align-content: left;
+  height:40px;
+  width:71%;
+  text-transform: uppercase;
+  font-family:"Roboto";
+  font-size:20px;
+  background-color:#000;
+  color:#fff;
+}
+
+.scrubIdentity{
+  grid-column: 1/3;
+  grid-row:3;
+  background-color:lavender;
+}
+
+/* PRODUCTS _ BATHBOMBS */
+
+.productType{
+  text-align: center;
+  font-family:"Roboto";
+}
+
+.productType:link{
+  text-decoration:none;
+}
+
+.productType:visited{
+  text-decoration: none;
+}
+
+.productPrice{
+  text-align:center;
+}
+
+
+/* INDIVIDUAL ITEM PAGES */
+
+.itemBannerWrapper{
+  height:500px;
+  overflow:hidden;
+}
+
+.itemBannerWrapper img{
+  width:100%;
+  
+}
+
+.buyItem{
+  position:absolute;
+  transform:translateY(-500px);
+  background-color:white;
+  padding:10px;
+  width:350px;
+  margin:10px;
+}
+
+.buyItem p{
+  text-align:center;
+}
+
+.buyItem b{
+  display:flex;
+  justify-content: center;
+}
+
+.buyItem .itemPrice{
+  text-align: center;
+}
+
+.buyItem img{
+  margin:auto;
+  display:flex;
+}
+
+/* CART */
+
+.cartItem{
+  text-align:center;
+}
+
+.cartBtn{
+  grid-column:1/4;
+  width:40%;
+  height:50px;
+  background-color:black;
+  color:white;
+  font-size:15px;
+  font-family:"Roboto";
+  cursor:pointer;
+  display:flex;
+  justify-content: center;
+  margin:auto;
+}
+
+#cartForm{
+  margin:auto;
+  display:flex;
+}
+
+
+
+.cartBtns{
+  margin:auto;
+  width:100%;
+}
+
+#cartForm .cartBtns .grid-item{
+  justify-content: center;
+  margin:auto;
+  display:flex;
+}
+
+input[type=submit]{
+  text-transform: uppercase;
+}
+
+
+/* ROTATE ITEM ON HOVER */
+
+.prodImg:hover{
+  transform: rotate(-15deg);
+}
+
+/*
+@keyframes spin {
+  from {
+    transform: scale();
+  }
+  to {
+    transform: scale(10px);
+  }
+} */
+
+/* 
+@-webkit-keyframes spin {
+  0%   { transform: rotate(0) }
+  100% { transform: rotate(30deg) }
+}
+@-moz-keyframes spin {
+  0%   { transform: rotate(0) }
+  100% { transform: rotate(30deg) }
+}
+@-o-keyframes spin {
+  0%   { transform: rotate(0) }
+  100% { transform: rotate(30deg) }
+}
+@keyframes spin {
+  0%   { transform: rotate(0) }
+  100% { transform: rotate(30deg) }
+} */
+
+#quantityNum{
+  margin:auto;
+  display:flex;
+  width:50px;
+}
+
+#productDesc{
+  font-size:17px;
+  padding:20px 20px;
+}
+
+#descriptionBox{
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+
+
+.itemDescription{
+  text-align:center;
+  padding:20px 20px;
+  width:80%;
+  margin:auto;
+  background-color:lightgrey;
+}
+
+.itemDescription p{
+  margin:20px 20px;
+}
+
+.itemDescription #descriptionTitle{
+  font-size:18px;
+  color:black;
+}
+
+#descriptionText{
+  font-style:italic;
+}
+
+.myAccountMenu ul{
+  list-style-type:none;
+  font-family:"Roboto";
+  line-height:30px;
+}
+
+
+
+.myAccountMenu ul li a{
+  font-size:18px;
+  font-family:"Roboto";
+  text-transform:uppercase;
+  color:black;
+  text-decoration:none;
+  line-height:10px;
+}
+
+.myAccountMenu ul li a:active{
+  font-size:18px;
+  font-family:"Roboto";
+  text-transform:uppercase;
+  color:black;
+}
+
+
+.myAccountMenu ul li a:hover{
+  color:grey;
+}
